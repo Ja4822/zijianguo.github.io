@@ -42,11 +42,10 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:25%;max-width:25%">
-                <img style="width:100%;max-width:100%" alt="profile photo" src="images/safer.png">
+                <img style="width:100%;max-width:100%" alt="profile photo" src="images/profile.png">
               </td>
             </tr>
           </tbody></table>
-
         </section>
 
         <!-- <section id="News">
@@ -64,8 +63,9 @@
         <!-- <br> -->
         <!-- <br> -->
 
-        <section id="Research">
-        <h2 style="padding-bottom:2px;">Publications</h2><hr>
+        <section id="Publications">
+        <h2 style="padding-bottom:2px;">Publications</h2>
+        <hr>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
@@ -141,8 +141,72 @@
           </tbody></table>
           
         <br>
-        <h2 style="padding-bottom:2px;">Projects</h2><hr>
+        <section id="Projects"></section>
+        <h2 style="padding-bottom:2px;">Projects</h2>
+        <hr>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr class="space">
+              <td style="width:210px;">
+                <!-- <img src='images/delivery-robot.png' style="border-style: none; " width="100%"> -->
+                <img src='images/delivery-robot.gif' style="border-style: none; " width="100%">
+              </td>
+              <td style="padding-left:10px;padding-right:10px;width:75%;vertical-align:middle">
+                <p class="papertitle">Autonomous Ground Delivery Robot: Localization, Perception and Planning, 2022</p>
+                <p style="text-align:justify; text-justify:inter-ideograph;">
+                We developled a full-stack autonomous navigation pipeline including sensor calibration, mapping, localization, perception, planning, and control based on ROS.
+                Aditionally, I built a simulation environment for the roobt in Webots simulator, trained it using reinforcement learning algorithms and tested them in the real world.
+                Our robot is featured on CMU's <a href="https://engineering.cmu.edu/news-events/news/2022/04/22-warehouse-robots.html" target="_blank">website</a>.
+                More details can be found in our <a href="https://safeai-scout.readthedocs.io/en/latest/" target="_blank">documents</a.>
+                </p>
+              </td>
+            </tr>
 
+            <tr class="space">
+              <td style="width:210px;vertical-align:center;">
+                <img src='images/ucl.png' style="border-style: none;vertical-align:bottom;" width="100%">
+              </td>
+              <td style="padding-left:10px;padding-right:10px;width:75%;vertical-align:middle">
+                <p class="papertitle">Aiding Monocular SLAM with Prior Constraints, 2021</p>
+                <p style="text-align:justify; text-justify:inter-ideograph;">
+                This is my master dissertation at UCL.
+                I proposed an approach to exploiting semantic and public prior information in a monocular SLAM system that utilises ORB features and line features.
+                These two types of information are preprocessed in a series of DBSCAN, MultiRANSAC, and point-to-point ICP to achieve better data association. 
+                Experiment in KITTI datasets demonstrates that the method can reduce scale drift and therefore improve localization and mapping accuracy.
+                </p>
+              </td>
+            </tr>
+
+            <tr class="space">
+              <td style="width:210px;vertical-align:center;">
+                <img src='images/nku.png' style="border-style: none;vertical-align:bottom;" width="100%">
+              </td>
+              <td style="padding-left:10px;padding-right:10px;width:75%;vertical-align:middle">
+                <p class="papertitle">All-terrain Anti-interference Robot Based on the Optical Fiber Communication, 2020</p>
+                <p style="text-align:justify; text-justify:inter-ideograph;">
+                We designed and built an all-terrain anti-interference robot aiming for disaster rescue from scratch.
+                We designed the 3D model of the robot in SolidWorks and performed the kinematic and dynamics simulation in Adams and Matlab.
+                Particularly, we developed a unique rolling wheeled robot chassis, which was patented, to surmount barriers.
+                The robot achieved mapping, localization and navigation functions using ROS packages, and remote communication via optical fiber.
+                This project won the first price of National Undergraduates Innovation and Entrepreneurship.
+                </p>
+              </td>
+            </tr>
+
+            <tr class="space">
+              <td style="width:210px;vertical-align:center;">
+                <img src='images/robocup.png' style="border-style: none;vertical-align:bottom;" width="100%">
+              </td>
+              <td style="padding-left:10px;padding-right:10px;width:75%;vertical-align:middle">
+                <p class="papertitle">Intelligent Household Service Robots Development, 2019</p>
+                <p style="text-align:justify; text-justify:inter-ideograph;">
+                We developed several intelligent household service robots that can interact with humans and achieve multiple tasks based on ROS.
+                The robot can locate sound source, recognize speech commands, perform computer vision tasks such as object classification and pose detection, and navigate through dynamic indoor environment without collision.
+                We competed in World Robot Summit challenges and RoboCup@Home competition and won a total of 8 awards.
+                </p>
+              </td>
+            </tr>
+
+          </tbody></table>
 
         </section>
 
@@ -158,9 +222,9 @@
         <br><br><br>
         <hr>
 
-        <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=tt&d=3LKFDYSZt3RIovAmYtKQQ-W7IRj6VHU5lcbI3SI9HC8&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+        <!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=tt&d=3LKFDYSZt3RIovAmYtKQQ-W7IRj6VHU5lcbI3SI9HC8&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
         <div align="center">Last update: <span id="last_update"></span></div>
-        <footer align="center"> <small>&copy; Copyright <span id="current_year"></span>, Zijian Guo</small> </footer>
+        <footer align="center"> <small>&copy; Copyright <span id="current_year"></span>, Zijian Guo</small> </footer> -->
 
       </td>
     </tr>
