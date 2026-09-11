@@ -64,12 +64,28 @@
         <!-- <br> -->
 
         <section id="Publications">
-        <h2 style="padding-bottom:2px;">Publications</h2>
+        <div class="section-heading">
+          <h2>Publications</h2>
+          <span class="publication-views" aria-label="Publication view">
+            (<button type="button" class="view-toggle active" data-view="topic" aria-pressed="true">by topic</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" class="view-toggle" data-view="date" aria-pressed="false">by date</button>)
+          </span>
+        </div>
         <hr>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <p class="publication-note">* indicates equal contribution.</p>
+        <nav class="topic-nav" aria-label="Publication topics">
+          <a href="#safe-robust-rl" data-topic-link="safe">Safe &amp; Robust RL</a>
+          <span aria-hidden="true">/</span>
+          <a href="#neuro-symbolic-rl" data-topic-link="formal">Neuro-Symbolic RL</a>
+          <span aria-hidden="true">/</span>
+          <a href="#other-work" data-topic-link="other">Other Work</a>
+        </nav>
+
+          <table class="publication-list" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
-            <tr class="space">
+            <tr class="space publication" data-topic="formal" data-year="2026">
               <td style="width:210px;vertical-align:center;horiz-align: center">
                 <img src='images/specrlbench.png' style="border-style: none;vertical-align:bottom;horiz-align: center" width="100%">
               </td>
@@ -89,7 +105,7 @@
               </td>
             </tr>
 
-            <tr class="space">
+            <tr class="space publication" data-topic="formal" data-year="2025">
               <td style="width:210px;vertical-align:center;horiz-align: center">
                 <img src='images/genz-ltl.png' style="border-style: none;vertical-align:bottom;horiz-align: center" width="100%">
               </td>
@@ -110,7 +126,7 @@
               </td>
             </tr>
 
-            <tr class="space">
+            <tr class="space publication" data-topic="safe" data-year="2025">
               <td style="width:210px;vertical-align:center;horiz-align: center">
                 <img src='images/hmarl-cbf.png' style="border-style: none;vertical-align:bottom;horiz-align: center" width="100%">
               </td>
@@ -138,7 +154,7 @@
             </tr>
 
 
-            <tr class="space">
+            <tr class="space publication" data-topic="safe" data-year="2025">
               <td style="width:210px;vertical-align:center;horiz-align: center">
                 <img src='images/ccac.png' style="border-style: none;vertical-align:bottom;horiz-align: center" width="100%">
               </td>
@@ -158,7 +174,7 @@
               </td>
             </tr>
 
-            <tr class="space">
+            <tr class="space publication" data-topic="formal" data-year="2024">
               <td style="width:210px;vertical-align:center;horiz-align: center">
                 <img src='images/sdt.png' style="border-style: none;vertical-align:bottom;horiz-align: center" width="100%">
               </td>
@@ -177,7 +193,7 @@
             </tr>
 
 
-            <tr class="space">
+            <tr class="space publication" data-topic="safe" data-year="2024">
               <td style="width:210px;vertical-align:center;horiz-align: center">
                 <img src='images/dsrl.png' style="border-style: none;vertical-align:bottom;horiz-align: center" width="100%">
               </td>
@@ -203,7 +219,7 @@
               </td>
             </tr>
 
-            <tr class="space">
+            <tr class="space publication" data-topic="other" data-year="2024">
               <td style="width:210px;vertical-align:center;horiz-align: center">
                 <img src='images/TiV-ODE.png' style="border-style: none;vertical-align:bottom;horiz-align: center" width="100%">
               </td>
@@ -226,7 +242,7 @@
               </td>
             </tr>
 
-            <tr class="space">
+            <tr class="space publication" data-topic="safe" data-year="2023">
               <td style="width:210px;vertical-align:center;horiz-align: center">
                 <img src='images/cdt.png' style="border-style: none;vertical-align:bottom;horiz-align: center" width="100%">
               </td>
@@ -248,7 +264,7 @@
               </td>
             </tr>
 
-            <tr class="space">
+            <tr class="space publication" data-topic="safe" data-year="2023">
               <td style="width:210px;vertical-align:center;horiz-align: center">
                 <img src='images/safer.png' style="border-style: none;vertical-align:bottom;horiz-align: center" width="100%">
               </td>
@@ -272,7 +288,7 @@
               </td>
             </tr>
 
-            <tr class="space">
+            <tr class="space publication" data-topic="safe" data-year="2023">
               <td style="width:210px;vertical-align:center;horiz-align: center">
                 <img src='images/adv-ppol.png' style="border-style: none;vertical-align:bottom;horiz-align: center" width="100%">
               </td>
@@ -297,7 +313,7 @@
               </td>
             </tr>
 
-            <tr class="space">
+            <tr class="space publication" data-topic="safe" data-year="2022">
               <td style="width:210px;vertical-align:center;horiz-align: center">
                 <img src='images/rce.png' style="border-style: none;vertical-align:bottom;horiz-align: center" width="100%">
               </td>
@@ -324,8 +340,10 @@
             
           </tbody></table>
           
+        </section>
+
         <br>
-        <section id="Projects"></section>
+        <section id="Projects">
         <h2 style="padding-bottom:2px;">Projects</h2>
         <hr>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -397,12 +415,26 @@
 
         <br><br>
 
-        <!-- <section id="Service">
-            <h2 style="padding-bottom:2px;"> Service </h2><hr>
-            <table style="line-height:150%" class="table table-hover table-striped">
-                <tr><td style="width:20%;"><strong>Conference Reviewer</strong>: NeurIPS 2022, AAAI 2022, AACL 2022 </td></tr>
-            </table>
-        </section> -->
+        <section id="Service">
+          <h2 style="padding-bottom:2px;">Service</h2>
+          <hr>
+
+          <div class="service-group">
+            <h3>Reviewing</h3>
+            <ul class="service-list">
+              <li><strong>Conferences:</strong> NeurIPS, ICLR, IROS, ICRA, CoRL, SIGGRAPH Asia, and NeuS.</li>
+              <li><strong>Journals:</strong> TMLR, IEEE TCAD, IEEE TNNLS, and IEEE RA-L.</li>
+            </ul>
+          </div>
+
+          <div class="service-group">
+            <h3>Teaching &amp; Mentoring</h3>
+            <ul class="service-list">
+              <li><strong>Teaching:</strong> CMU 24-784 (Spring 2022) and BU ENGEK 125 (Fall 2025).</li>
+              <li><strong>Mentoring:</strong> BU RISE Program (Summer 2026).</li>
+            </ul>
+          </div>
+        </section>
 
         <!-- <br><br><br> -->
         <hr>
@@ -422,6 +454,72 @@
       // var time = document.lastModified;
       // document.getElementById("last_update").innerHTML = time;
     }
+
+    (function () {
+      var tableBody = document.querySelector('.publication-list tbody');
+      var publications = Array.prototype.slice.call(document.querySelectorAll('.publication'));
+      var toggles = document.querySelectorAll('.view-toggle');
+      var topicNav = document.querySelector('.topic-nav');
+      var topicOrder = ['safe', 'formal', 'other'];
+      var topicDetails = {
+        safe: { id: 'safe-robust-rl', label: 'Safe & Robust RL' },
+        formal: { id: 'neuro-symbolic-rl', label: 'Neuro-Symbolic RL & Formal Methods' },
+        other: { id: 'other-work', label: 'Other Work' }
+      };
+
+      function clearTopicHeadings() {
+        document.querySelectorAll('.topic-heading-row').forEach(function (heading) {
+          heading.remove();
+        });
+      }
+
+      function showPublications(view) {
+        clearTopicHeadings();
+
+        if (view === 'topic') {
+          topicOrder.forEach(function (topic) {
+            var heading = document.createElement('tr');
+            heading.className = 'topic-heading-row';
+            heading.id = topicDetails[topic].id;
+            heading.innerHTML = '<td colspan="2"><h3>' + topicDetails[topic].label + '</h3></td>';
+            tableBody.appendChild(heading);
+            publications.filter(function (publication) {
+              return publication.dataset.topic === topic;
+            }).forEach(function (publication) {
+              tableBody.appendChild(publication);
+            });
+          });
+          topicNav.hidden = false;
+        } else {
+          publications.sort(function (a, b) {
+            return Number(b.dataset.year) - Number(a.dataset.year);
+          }).forEach(function (publication) {
+            tableBody.appendChild(publication);
+          });
+          topicNav.hidden = true;
+        }
+
+        toggles.forEach(function (toggle) {
+          var selected = toggle.dataset.view === view;
+          toggle.classList.toggle('active', selected);
+          toggle.setAttribute('aria-pressed', selected);
+        });
+      }
+
+      toggles.forEach(function (toggle) {
+        toggle.addEventListener('click', function () {
+          showPublications(toggle.dataset.view);
+        });
+      });
+
+      document.querySelectorAll('[data-topic-link]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          showPublications('topic');
+        });
+      });
+
+      showPublications('topic');
+    }());
   </script>
 </body>
 
