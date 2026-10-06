@@ -77,6 +77,62 @@ a:hover {
   text-decoration:underline
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.site-header {
+  border-bottom: 10px solid #9bb1c2;
+  background: #ffffff;
+}
+
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1120px;
+  min-height: 86px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.site-title,
+.site-navigation a {
+  color: #344e64;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+}
+
+.site-title {
+  font-size: 28px;
+  white-space: nowrap;
+}
+
+.site-navigation {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.site-navigation a {
+  font-size: 19px;
+  white-space: nowrap;
+}
+
+.site-title:hover,
+.site-title:focus,
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #111111;
+  text-decoration: none;
+}
+
 body,
 td,
 th,
@@ -211,7 +267,70 @@ h2{
   line-height: 1.6;
 }
 
+.contact-section {
+  padding: 8px 0 34px;
+}
+
+.contact-section p {
+  max-width: 760px;
+  margin: 18px 0 12px;
+  line-height: 1.6;
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #222222;
+  line-height: 1;
+}
+
+.contact-links svg {
+  width: 36px;
+  height: 36px;
+  fill: currentColor;
+}
+
+.contact-links a:hover,
+.contact-links a:focus {
+  color: #3264ba;
+  text-decoration: none;
+}
+
+.site-footer {
+  border-top: 1px solid #dddddd;
+  margin-top: 10px;
+  padding: 30px 0 38px;
+  color: #222222;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
 @media (max-width: 560px) {
+  .site-header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 20px;
+  }
+
+  .site-navigation {
+    flex-wrap: wrap;
+    gap: 8px 18px;
+  }
+
+  .site-navigation a {
+    font-size: 16px;
+  }
+
   .section-heading {
     align-items: flex-start;
     flex-direction: column;

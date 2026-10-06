@@ -9,12 +9,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="./files/stylesheet.css">
-  <link rel="stylesheet" href="./files/font-awesome.min.css">
 <!--  <link href="./files/bootstrap.min.css" rel="stylesheet">-->
   <!-- bootstrap -->
 </head>
 
-<body onload="updateTime()">
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-title" href="#About">Zijian Guo</a>
+      <nav class="site-navigation" aria-label="Main navigation">
+        <a href="#About">About</a>
+        <a href="#Publications">Research &amp; Publications</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Service">Service</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </div>
+  </header>
   <table style="width:100%;max-width:860px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:10px">
       <td style="padding:10px">
@@ -28,17 +39,11 @@
                   <strong><name>Zijian Guo</name></strong>
                 </p>
                 <p style="text-align:justify; text-justify:inter-ideograph;">
-                  I am a third-year Ph.D. candidate at <a href="https://www.bu.edu/eng/academics/departments-and-divisions/systems-engineering/" target="_blank">Boston University</a>. I am a member of <a href="https://sites.bu.edu/depend/" target="_blank">Dependable Computing Laboratory</a>, where I work with Prof. <a href="https://www.bu.edu/eng/profile/wenchao-li-ph-d/" target="_blank">Wenchao Li</a>.
+                  I am a fourth-year Ph.D. candidate at <a href="https://www.bu.edu/eng/academics/departments-and-divisions/systems-engineering/" target="_blank">Boston University</a>. I am a member of <a href="https://sites.bu.edu/depend/" target="_blank">Dependable Computing Laboratory</a>, where I work with Prof. <a href="https://www.bu.edu/eng/profile/wenchao-li-ph-d/" target="_blank">Wenchao Li</a>.
                   I received my degreed of M.S. in Mechanical Engineering from <a href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>, M.S. in Computer Graphics, Vision and Imaging (CGVI) with dictinction from <a href="https://www.ucl.ac.uk/" target="_blank">University College London (UCL)</a>, and my Bachelor's degree in Engineering from <a href="https://en.nankai.edu.cn/" target="_blank">Nankai University</a>.
                 </p>
                 <p style="text-align:justify; text-justify:inter-ideograph;">
                   My research topics focuses on reinforcement learning as well as decision-making and controls in robitics, with the goal of deploying the learning-based algorithms to real-world safety-critical applications.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:zjguo@bu.edu">Email</a> &nbsp/&nbsp
-                  <a href="https://github.com/Ja4822" target="_blank">Github</a> &nbsp/&nbsp
-                  <a href="https://www.linkedin.com/in/zijian-guo/" target="_blank">LinkedIn</a>
-<!--                  <a href="data/CV.pdf" target="_blank">CV</a>-->
                 </p>
               </td>
               <td style="padding:2.5%;width:25%;max-width:25%">
@@ -436,25 +441,42 @@
           </div>
         </section>
 
-        <!-- <br><br><br> -->
-        <hr>
+        <br><br>
 
-        <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=tt&d=3LKFDYSZt3RIovAmYtKQQ-W7IRj6VHU5lcbI3SI9HC8&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
-        <div align="center">Last update: <span id="last_update"></span></div>
-        <footer align="center"> <small>&copy; Copyright <span id="current_year"></span>, Zijian Guo</small> </footer>
+        <section id="Contact" class="contact-section">
+          <h2>Contact</h2>
+          <hr>
+          <p>I am always happy to discuss research, collaboration, and opportunities in safe and robust reinforcement learning, neuro-symbolic reinforcement learning, and formal methods.</p>
+          <div class="contact-links" aria-label="Contact links">
+            <a href="mailto:zjguo@bu.edu" aria-label="Email" title="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm18 2.4-8.4 6.3a1 1 0 0 1-1.2 0L3 7.4V17h18V7.4ZM4.7 7 12 12.5 19.3 7H4.7Z"/>
+              </svg>
+            </a>
+            <a href="https://github.com/Ja4822" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 .7a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.3c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .7Z"/>
+              </svg>
+            </a>
+            <a href="https://scholar.google.com/citations?user=TxBFprEAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2 1 8l4 2.2V16h2v-4.7L12 14l11-6L12 2Zm-6.5 9.4V16c0 2.2 2.9 4 6.5 4s6.5-1.8 6.5-4v-4.6L12 15l-6.5-3.6Z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/zijian-guo/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.5 2H3.5A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V9h3v10ZM6.5 7.7A1.75 1.75 0 1 1 6.5 4.2a1.75 1.75 0 0 1 0 3.5ZM19 19h-3v-4.9c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6v5h-3V9h2.9v1.4h.1a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.7 2 3.7 4.7V19Z"/>
+              </svg>
+            </a>
+          </div>
+        </section>
+
+        <footer class="site-footer">&copy; 2026 Zijian Guo. All rights reserved.</footer>
 
       </td>
     </tr>
   </table>
   <script>
-    function updateTime() {
-      var date = new Date(document.lastModified);
-      document.getElementById("last_update").innerHTML = date.toLocaleDateString();
-      document.getElementById("current_year").innerHTML = date.getFullYear();
-      // var time = document.lastModified;
-      // document.getElementById("last_update").innerHTML = time;
-    }
-
     (function () {
       var tableBody = document.querySelector('.publication-list tbody');
       var publications = Array.prototype.slice.call(document.querySelectorAll('.publication'));
